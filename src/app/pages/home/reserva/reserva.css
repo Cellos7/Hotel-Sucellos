@@ -1,0 +1,27 @@
+.reserva-hero{
+
+height:100vh;
+
+background:
+linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url("https://images.unsplash.com/photo-1566665797739-1674de7a421a");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+}
+
+.reserva-box{
+
+background:white;
+padding:40px;
+border-radius:10px;
+width:380px;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+
+}
