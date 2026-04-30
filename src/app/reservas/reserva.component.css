@@ -1,0 +1,137 @@
+:host {
+  display: block;
+  min-height: 100vh;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.reservas-container {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  max-width: 100%;
+  margin: 0;
+  padding: 30px 20px;
+  font-family: Arial, sans-serif;
+}
+
+
+h1 {
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+
+.btn {
+  padding: 8px 16 px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+
+.btn-primary { background-color: #1a73e8; color: white; }
+.btn-success { background-color: #28a745; color: white; }
+.btn-secondary { background-color: #6c757d; color: white; }
+.btn-edit { background-color: #ffc107; color: #333; }
+.btn-delete { background-color: #dc3545; color: white; }
+
+
+.formulario-card{
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+
+.formulario-card h2 {
+  margin-bottom: 16px;
+  color: #444;
+}
+
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #555;
+}
+
+
+.form-group input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+
+.form-actions {
+  margin-top: 16px;
+}
+
+
+.tabela-wrapper {
+  margin-top: 24px;
+}
+
+
+table {
+  background-color: rgba (255, 255, 255, 0.9);
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+th, td {
+   padding: 10px 12px;
+   border: 1px solid #ddd;
+   text-align: left;
+   font-size: 14px;
+}
+
+
+th {
+  background-color: #111;
+  color: white;
+}
+
+
+tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+
+.acoes {
+  white-space: nowrap;
+}
+
+
+.sem-dados {
+  text-align: center;
+  color: #888;
+  margin-top: 20px;
+}
