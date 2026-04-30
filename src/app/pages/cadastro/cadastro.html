@@ -1,0 +1,63 @@
+<div class="cadastro-hero">
+
+  <div class="cadastro-container">
+
+    <div class="cabecalho">
+      <h2>Cadastro de Clientes</h2>
+      <button class="btn btn-warning" (click)="abrirFormularioNovo()">+ Novo Cliente</button>
+    </div>
+
+    <div class="formulario-box" *ngIf="mostrarFormulario">
+
+      <h4>{{ editandoId === -1 ? 'Novo Cliente' : 'Editar Cliente' }}</h4>
+
+      <div class="campos">
+
+        <input class="form-control"
+          placeholder="Nome completo"
+          [(ngModel)]="formulario.nome">
+
+        <input class="form-control"
+          placeholder="E-mail"
+          [(ngModel)]="formulario.email">
+
+        <input class="form-control"
+          placeholder="Telefone"
+          [(ngModel)]="formulario.telefone">
+
+        <input class="form-control"
+          placeholder="Cidade"
+          [(ngModel)]="formulario.cidade">
+
+      </div>
+
+      <div class="botoes-form">
+        <button class="btn btn-warning" (click)="salvarCliente()">Salvar</button>
+        <button class="btn btn-secondary" (click)="cancelar()">Cancelar</button>
+      </div>
+
+    </div>
+
+    <div class="vazio" *ngIf="clientes.length === 0 && !mostrarFormulario">
+      <p>Nenhum cliente cadastrado. Clique em "+ Novo Cliente" para começar.</p>
+    </div>
+
+    <div class="cliente-card" *ngFor="let c of clientes">
+
+      <div class="cliente-info">
+        <h5>{{ c.nome }}</h5>
+        <p>✉️ {{ c.email }}</p>
+        <p>📞 {{ c.telefone }}</p>
+        <p>📍 {{ c.cidade }}</p>
+      </div>
+
+      <div class="cliente-acoes">
+        <button class="btn btn-sm btn-outline-primary" (click)="editarCliente(c)">Editar</button>
+        <button class="btn btn-sm btn-outline-danger" (click)="deletarCliente(c.id)">Excluir</button>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
