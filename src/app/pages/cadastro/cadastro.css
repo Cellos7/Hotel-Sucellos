@@ -1,0 +1,100 @@
+.cadastro-hero {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    url("https://images.unsplash.com/photo-1521747116042-5a810fda9664");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+.cadastro-container {
+  width: 100%;
+  max-width: 650px;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.cabecalho h2 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.formulario-box {
+  background: white;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+  margin-bottom: 25px;
+}
+
+.formulario-box h4 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.campos {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.botoes-form {
+  display: flex;
+  gap: 10px;
+}
+
+.botoes-form .btn {
+  flex: 1;
+  padding: 10px;
+}
+
+.vazio {
+  text-align: center;
+  color: rgba(255,255,255,0.7);
+  padding: 40px 0;
+  font-size: 16px;
+}
+
+.cliente-card {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cliente-info h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.cliente-info p {
+  margin: 2px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.cliente-acoes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cliente-acoes .btn {
+  min-width: 75px;
+}
